@@ -19,3 +19,13 @@ def letter_index(word):
         final_result += str(index_number) + character
     print(final_result)
 letter_index('Peace')
+
+def ingredient_check(ingredients):
+    user_search = input('What ingredient are you searching for?')
+    for ingredient in ingredients:
+        if ingredient == user_search:
+            return ingredient
+    user_choice = input('Ingredient not present, would you like to search again?')
+    if user_choice == 'Yes':
+        matched_ingredient = ingredient_check(['Salt', 'Pepper', 'Egg', 'Flour'])
+matched_ingredient = ingredient_check(['Salt', 'Pepper', 'Egg', 'Flour'])
